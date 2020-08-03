@@ -5,8 +5,6 @@ ruby '2.7.0'
 
 # Bundle edge Rails instead: gem 'rails', github: 'rails/rails'
 gem 'rails', '~> 6.0.3', '>= 6.0.3.2'
-# Use sqlite3 as the database for Active Record
-gem 'sqlite3', '~> 1.4'
 # Use Puma as the app server
 gem 'puma', '~> 4.1'
 # Use SCSS for stylesheets
@@ -32,6 +30,8 @@ gem 'bulma-rails', '~> 0.9.0'
 gem 'simple_form', '~> 5.0', '>= 5.0.2'
 gem 'gravatar_image_tag', '~> 1.2'
 gem 'devise', '~> 4.7', '>= 4.7.2'
+gem 'pg', '~> 1.2', '>= 1.2.3'
+gem 'figaro', '~> 1.2'
 
 group :development, :test do
   # Call 'byebug' anywhere in the code to stop execution and get a debugger console

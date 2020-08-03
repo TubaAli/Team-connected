@@ -1,6 +1,6 @@
 <div class="column is-one-quarter">
 	<nav class="panel">
-		<p class="panel-heading"> Profile </p>
+		<p class="panel-heading"> My Space </p>
 		<div class="panel-block">
 			<article class="media">
 				<div class="media-left">
@@ -11,7 +11,7 @@
 				<div class="media-content">
 					<div class="content">
 						<p>
-							<strong> <%= current_user.name %> </strong> <br/>
+							<h5><b> <%= current_user.name %> </b></h5>
 							<small> <%= current_user.username %> </small>
 						</p>
 					</div>
@@ -24,25 +24,45 @@
 				
 				<div class="level-item has-centered-text">
 					<div>
-						<p class="heading"> Tweeets </p>
+						<p class="heading"> Posts </p>
 						<p class="title is-6"> <%= current_user.tweeets.count %></p>
 					</div>
 				</div>
-
+			</div>
+		</div>
+		<div class="panel-block">
+			<div class="level is-mobile">
+				
 				<div class="level-item has-centered-text">
 					<div>
-						<p class="heading"> Following </p>
-						<p class="title is-6">123</p>
+						<p class="heading"> Email ID </p>
+						<p class="title is-6"> <%= current_user.email %></p>
 					</div>
 				</div>
-
+			</div>
+		</div>
+		<div class="panel-block">
+			<div class="level is-mobile">
+				
 				<div class="level-item has-centered-text">
 					<div>
-						<p class="heading"> Followers </p>
-						<p class="title is-6">12k</p>
+						<p class="heading"> Team Name </p>
+						<p class="title is-6"> IT Strategy Team </p>
 					</div>
 				</div>
-
+			</div>
+		</div>
+		<div class="panel-block">
+			<div class="level is-mobile">
+				
+				<div class="level-item has-centered-text">
+					<div>
+						<p class="heading"> My interests </p>
+						<p class="title is-6"> Volleyball </p>
+						<p class="title is-6"> Video games </p>
+						<p class="title is-6"> Beaches </p>
+					</div>
+				</div>
 			</div>
 		</div>
 	</nav>
